@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*Partial filen er en underfil til style.scss. Underscore er nødvendig ellers opretter compileren css.map og .css fil*/
+/*Variabler*/
+/*Når vi bruger @use hentes partial filen ind som module.*/
+/*Generel styling*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-family: "segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*Kalder på variablen inde i partial filen*/
+  background-color: #f0f0f0;
+  /*Nesting - vi indsætter "alle" elementer som har direkte relation til øverste element af blokken*/
+}
+body p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: 600;
+  color: #333333;
+}/*# sourceMappingURL=style.css.map */
